@@ -1,0 +1,6 @@
+mixin simple_card(org, type='coorganizers')
+  .card.simple-card
+    figure.card-image
+      img.org-image(src=`static/images/${type}/${org.image}` alt=org.name)
+    .card-content
+      h3.title.is-6 #{org.name}

@@ -1,0 +1,17 @@
+- 
+  const sponsors = [
+    {
+      name: '財團法人可成教育基金會',
+      image: 'catcher.png'
+    }
+  ]
+
+include ../../mixins/simple_card.pug
+
+section#sponsors.hero.is-medium.has-text-centered
+  .hero-body
+    h2.title 贊助商
+    .columns.is-multiline.is-centered
+      each sponsor in sponsors
+        .column.is-one-third
+          +simple_card(sponsor, 'sponsors')

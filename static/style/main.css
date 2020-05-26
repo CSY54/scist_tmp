@@ -1,0 +1,71 @@
+html {
+	scroll-behavior: smooth;
+}
+
+h2 {
+  padding-top: 60px !important;
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-background.is-transparent {
+  opacity: 0.3;
+}
+
+.has-text-middle {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-body > .title:before {
+  content: '< ';
+  font-size: 1.5rem;
+}
+
+.hero-body > .title:after {
+  content: ' />';
+  font-size: 1.5rem;
+}
+
+.has-ul-deco {
+  padding: 1.5rem;
+  margin-bottom: 0 !important;
+}
+
+.has-ul-deco > li {
+  display: list-item;
+  margin-left: 30px;
+}
+
+.is-80x80 {
+  height: 80px;
+  width: 80px;
+}
+
+.has-text-transparent {
+  color: hsl(0, 0%, 0%, 0) !important;
+}
+
+.club-card {
+  height: 100%;
+}
+
+.simple-card {
+  height: 100%;
+}
+
+.org-image {
+  padding: 10px;
+  max-height: 10rem;
+}

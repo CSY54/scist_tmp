@@ -1,0 +1,36 @@
+mixin club_card(club)
+  .box.club-card
+    article.media
+      figure.media-left
+        p.image.is-80x80
+          img(src=`static/images/clubs/${club.image}` alt=club.school)
+      .media-content
+        .content
+          h3.title.is-5 #{club.school}#{club.name}
+          - const huh = club.abbr || ' '
+          if club.abbr == undefined
+            h4.subtitle.is-6.has-text-transparent none
+          else
+            h4.subtitle.is-6 #{club.abbr}
+        .nav
+          a.button.is-text.social-link(
+            href=club.social.site
+            target="_blank"
+            disabled=club.social.site == undefined
+          )
+            span.icon.has-text-dark
+              i.mdi.mdi-web.mdi-24px
+          a.button.is-text.social-link(
+            href=club.social.fb
+            target="_blank"
+            disabled=club.social.fb == undefined
+          )
+            span.icon.has-text-dark.is-small
+              i.mdi.mdi-facebook.mdi-24px
+          a.button.is-text.social-link(
+            href=club.social.ig
+            target="_blank"
+            disabled=club.social.ig == undefined
+          )
+            span.icon.has-text-dark
+              i.mdi.mdi-instagram.mdi-24px

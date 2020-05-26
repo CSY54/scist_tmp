@@ -1,0 +1,28 @@
+.hero.is-primary.is-fullheight-with-navbar.has-background
+  img.hero-background.is-transparent(src="static/images/background.jpg")
+  nav.navbar.has-background-primary.is-primary.is-fixed-top.is-transparent
+    .navbar-brand
+      a.navbar-item(href="/")
+        img(src="static/images/index.png" alt="SCIST")
+      .navbar-burger.burger(data-target="navbar")
+        span
+        span
+        span
+    #navbar.navbar-menu
+      .navbar-end
+        a.navbar-item(href="#aboutus") 關於我們 
+        a.navbar-item(href="#courses") 課程內容 
+        a.navbar-item(href="#conference") 研討會 
+        a.navbar-item(href="#clubs") 參與社團 
+        a.navbar-item(href="#coorganizer") 協辦單位 
+        a.navbar-item(href="#sponsors") 贊助商 
+  .hero-body
+    .container.has-text-centered.wow.bounceInUp
+      h1.title.is-size-1-tablet.is-size-1-mobile.has-text-weight-bold
+        | 南臺灣高中生
+        br.is-hidden-tablet
+        | 資訊社群
+      p.subtitle.is-size-5-desktop.is-size-6-mobile.has-text-weight-bold
+        | Students' Community of Information 
+        br.is-hidden-tablet
+        | in Southern Taiwan

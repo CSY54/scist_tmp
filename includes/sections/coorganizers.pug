@@ -1,0 +1,25 @@
+-
+  const coorganizers = [
+    {
+      name: '國立臺南第一高級中學',
+      image: 'tnfsh.jpg'
+    },
+    {
+      name: '教育部資訊安全人才培育計畫暨臺灣好厲駭',
+      image: 'thh.jpg'
+    },
+    {
+      name: '教育部資訊安全人才培育計畫辦公室',
+      image: 'isip.jpg'
+    }
+  ]
+
+include ../../mixins/simple_card.pug
+
+section#coorganizer.hero.is-medium.has-text-centered
+  .hero-body
+    h2.title 協辦單位
+    .columns.is-multiline.is-centered
+      each coorganizer in coorganizers
+        .column.is-one-third
+          +simple_card(coorganizer)
