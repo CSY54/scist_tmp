@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   Array.from(document.querySelectorAll('h2')).forEach(function (el) {
     return el.classList.add('wow', 'bounceIn');
   });
-  Array.from(document.querySelectorAll('.box, .card, .text-only')).forEach(function (el) {
+  Array.from(document.querySelectorAll('.box, .card, .text-only, .footer')).forEach(function (el) {
     return el.classList.add('wow', 'bounceInUp');
   });
   new WOW().init();
