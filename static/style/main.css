@@ -69,3 +69,11 @@ h2 {
   padding: 10px;
   max-height: 10rem;
 }
+
+#sponsors .card-image {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
